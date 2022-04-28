@@ -1,0 +1,65 @@
+/* Подключаем обнуляющий стиль */
+@import "null.css";
+
+/* Обращение к селектору класса */
+.header-block{
+	color: brown;
+}
+
+/* Обращение ко всем объектам с классом title внутри всех объектов header-block */
+.header-block .title{
+	color: red;
+}
+
+/* Обращение ко всем элементам которые имеют классы anime-name и title ОДНОВРЕМЕННО */
+.anime-name.title{
+	color:fuchsia;
+}
+
+/* Обращение ко всем тегам P */
+p{
+	color: goldenrod;
+}
+
+/* Обращение ко всем тегам SPAN внутри всех тегов P */
+p span{
+	color: violet;
+}
+
+/* Обращение ко всем объектам с классом footer-text внутри всех ТЕГОВ DIV */
+div .footer-text{
+	color: brown;
+}
+
+/* Обращение ко всем объектам в теге nav */
+nav *{
+	color: goldenrod;
+}
+
+/* Обращение к элементу по ID (Высший приоритет) */
+#nav-title{
+	color: olivedrab;
+}
+
+/* Обращение к первому уровню вложенности */
+
+li > a{
+	color: tomato;
+}
+
+/* Обращение ко всем следующим объектам того же уровня что и класс attack-on-titan-text */
+.attack-on-titan-text ~ *{
+	color: red;
+}
+
+/* Пример использования селектора атрибута и регулярного выражения */
+[class*="-span"]{
+	color: black;
+}
+
+/* Обращение к одному следующему элементу того же уровня что и объект с классом footer-text */
+#footer-next + *{
+	color: black;
+}
+
+/* Вроде, ничего не забыл) */
